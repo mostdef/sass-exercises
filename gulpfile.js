@@ -21,7 +21,7 @@ gulp.task('sass', function() {
     .pipe(gulp.dest('css')) // tu w skrócie przekazujemy, ze plik wynikowy ma sie znalezc w folderze css, który gulp sobie stworzy
 })
 
-gulp.task('watch', function(){ //po pierwszym uruchomieniu gulp sass możemy odpalić 
+gulp.task('watch', function(){ //po pierwszym uruchomieniu gulp sass możemy odpalić ten watcher
     gulp.watch('scss/**/*.scss', ['sass']); 
 })
 
